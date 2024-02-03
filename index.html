@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice-Table</title>
+    <style>
+        body{
+            background-color: lightcyan;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        tr,th,td{
+            border: 1px solid black;
+            padding: 10px;
+            padding-right: 50px;
+            text-align: left;
+        }
+        .caption{
+            background-color: lightblue;
+        }
+        .List{
+            background-color: lightblue;
+        }
+        .invoiceTable{
+            width: 40%;
+            margin: 0 auto;
+            padding: 10px;
+            
+        }
+        .invoiceTable:hover{
+            box-shadow: 5px 5px 5px grey,-5px -5px 5px grey;
+        }
+        h1{
+            text-align: center;
+            border-bottom: 2px solid lightcoral;
+            border-radius: 50%;
+            background-color: antiquewhite;
+        }
+        h1:hover{
+            box-shadow: 5px 5px 5px pink,-5px -5px 5px pink;
+        }
+    </style>
+</head>
+<body>
+    <h1>Invoice-Table</h1>
+    <div class="invoiceTable">
+        <table>
+            <tr class="caption">
+                <th colspan="3">Invoice #12345ABC</th>
+                <th colspan="2">18 Jul 2019</th>
+            </tr>
+            <tr>
+               <td colspan="2"> <b>Pay To:</b> <br> The tech park <br> 123 Willow Street <br> Boulevard, LA-567892</td>
+               <td colspan="2"><b>Customer:</b> <br> John Lark <br> Dummy Apartments <br>276 Main Street <br>Boulevard, LA-567892</td>
+            </tr>
+            <tr class="List">
+                <th>Name/Description</th>
+                <th>Qty.</th>
+                <th>MRP</th>
+                <th>Amount</th>
+            </tr>
+            <tr>
+                <td>Biryani</td>
+                <td>3</td>
+                <td>400</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>Chocolate Shake</td>
+                <td>3</td>
+                <td>200</td>
+                <td>600</td>
+            </tr>
+            <tr>
+                <th colspan="3" style="background-color: lightblue;">Subtotal:</th>
+                <td>1800</td>
+            </tr>
+            <tr>
+                <th colspan="2" style="background-color: lightblue;">Tax</th>
+                <td>10%</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <th colspan="3" style="background-color: lightblue;">Grand Total:</th>
+                <td>RS 1620</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
